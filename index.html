@@ -74,9 +74,10 @@
 									</header>
 									<a href="#" class="image fit"><img src="images/AWS-Cloud-Migration-Tactics-for-a-Seamless-Transition.png" alt="" /></a>
 									<p>The cloud resume challenge is a project that challenged participants to produce a website running on serverless cloud infrastructure 
-										and built using CI/CD pipelines. The website is written in HTML, CSS and continuously deployed to an S3 bucket and cloudfront CDN. The provisioning of the backend infrastructure is 
-										automated using CICD pipeline that runs on GitHub actions deploying AWS SAM / CloudFormation artifacts. This is what I have done so far and im currently working on further features! <!--, with PY unit tests integrated. A Rest API is created using AWS API Gateway. 
-										This API powered by AWS Lamda (Python) handles updates to a DynamoDB table. --></p>
+										and built using CI/CD pipelines. The website is written in HTML, CSS and continuously deployed to an S3 bucket and cloudfront CDN.
+										The backend infrastructure is provisioned automatically via a CI/CD pipeline using GitHub Actions, which builds and deploys an AWS SAM application (translated into AWS CloudFormation). 
+										An HTTP API is created using Amazon API Gateway(v2). The API invokes an AWS Lambda function (Python) that atomically increments and reads a counter in Amazon DynamoDB, 
+										returning the latest visitor count to be displayed on the website.</p>
 									</header>
 								    <a href="#" class="image main"><img src="AWS-Cloud-Migration-Tactics-for-a-Seamless-Transition.png" alt="" /></a>
 									<ul class="actions special">
@@ -187,6 +188,7 @@
 	</body>
 
 </html>
+
 
 
 
